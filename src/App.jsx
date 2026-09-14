@@ -10,7 +10,7 @@ function App() {
   <nav className="nav-links">
     <a href="#support">GROW</a>
     <a href="#learning">LEARNING</a>
-    <a href="#connect">CONNECT</a>
+    <a href="#connect">CONNECTion</a>
   </nav>
 
   <a
