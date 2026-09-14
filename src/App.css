@@ -1,0 +1,397 @@
+/* ================= GENERAL ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  color: #4f5f52;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 6%;
+  background: #fffaf3;
+}
+
+.connect-button {
+  text-decoration: none;
+  color: #7b4f3a;
+  border: 1px solid #d9a441;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease;
+}
+
+.connect-button:hover {
+  background: #f6df9b;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 70px;
+  background: #fffaf3;
+}
+
+.hero-logo {
+  width: min(620px, 90%);
+  height: auto;
+}
+
+
+/* ================= STORY ================= */
+
+.story {
+  padding: 90px 20px;
+  background: #f8f1e7;
+}
+
+.story-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story h1 {
+  margin-bottom: 40px;
+  color: #6b7f5d;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.story p {
+  font-size: 19px;
+  line-height: 1.8;
+  margin: 24px 0;
+}
+
+.story strong {
+  color: #9b6650;
+  font-weight: 600;
+}
+
+.story-highlight {
+  margin: 50px auto;
+  padding: 25px 30px;
+  max-width: 700px;
+  background: #fffaf3;
+  border-left: 4px solid #d9a441;
+  border-radius: 10px;
+}
+
+.story-highlight p {
+  margin: 0;
+  font-size: 22px;
+  color: #58705b;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 30px 15px 50px;
+  }
+
+  .story {
+    padding: 65px 20px;
+  }
+
+  .story p {
+    font-size: 17px;
+  }
+
+  .story-highlight {
+    padding: 20px;
+  }
+
+}
+
+/* ================= SUPPORT AREAS ================= */
+
+.support {
+  padding: 100px 20px;
+  background: #fffaf3;
+}
+
+.support-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.support h2 {
+  color: #6b7f5d;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.support-areas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.support-area {
+  padding: 40px 30px;
+  border-radius: 20px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-area {
+  background: #eef4e9;
+}
+
+.careers-area {
+  background: #f8eee8;
+}
+
+.life-area {
+  background: #eef5f3;
+}
+
+.support-icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.support-area h3 {
+  margin: 5px 0 18px;
+  color: #58705b;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.support-area p {
+  margin: 0;
+  color: #596b5d;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 270px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+
+  .support-areas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .support-area {
+    min-height: 230px;
+  }
+}
+
+/* ================= HOW IT WORKS ================= */
+
+.how-it-works {
+  padding: 110px 20px;
+  background: #f8f1e7;
+}
+
+.how-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  color: #6b7f5d;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.how-intro {
+  max-width: 700px;
+  margin: 0 auto 65px;
+  color: #596b5d;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.step {
+  background: #fffaf3;
+  padding: 35px 25px;
+  border-radius: 20px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-number {
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #d9a441;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.step h3 {
+  margin: 0 0 18px;
+  color: #58705b;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.step p {
+  margin: 0;
+  color: #596b5d;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ================= CONNECT ================= */
+
+.connect {
+  padding: 120px 20px;
+  background: #6b7f5d;
+  color: #fffaf3;
+}
+
+.connect-content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect h2 {
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+
+.connect p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 18px 0;
+}
+
+.connect strong {
+  color: #f6df9b;
+}
+
+.connect-main-button {
+  margin-top: 35px;
+  padding: 14px 34px;
+  border: 1px solid #f6df9b;
+  border-radius: 30px;
+  background: #fffaf3;
+  color: #58705b;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.connect-main-button:hover {
+  background: #f6df9b;
+  color: #4f5f52;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 25px 20px;
+  text-align: center;
+  background: #fffaf3;
+  color: #7b4f3a;
+  font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .how-it-works {
+    padding: 80px 20px;
+  }
+
+  .how-intro {
+    margin-bottom: 45px;
+    font-size: 17px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .step {
+    min-height: 230px;
+  }
+
+  .connect {
+    padding: 90px 20px;
+  }
+
+  .connect p {
+    font-size: 17px;
+  }
+
+}
