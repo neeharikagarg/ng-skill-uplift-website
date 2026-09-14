@@ -1,3 +1,21 @@
+/* ================= BRAND COLORS ================= */
+
+:root {
+  --ng-blue: #004090;
+  --ng-gold: #F0A000;
+  --ng-green: #006030;
+  --ng-leaf: #408F20;
+
+  --ng-white: #FFF9E8;
+  --ng-text: #365B4A;
+
+  --ng-light-blue: #F2F6FB;
+  --ng-light-gold: #FFF3D6;
+  --ng-light-green: #F1F7F1;
+  --ng-light-yellow: #FFF5D8;
+}
+
+
 /* ================= GENERAL ================= */
 
 * {
@@ -10,9 +28,9 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fffaf3;
-  color: #4f5f52;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--ng-white);
+  color: var(--ng-text);
 }
 
 .app {
@@ -25,127 +43,161 @@ body {
 .header {
   height: 70px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 0 6%;
-  background: #fffaf3;
+  background: var(--ng-white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+
+/* TOP NAVIGATION */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--ng-text);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--ng-blue);
+}
+
+
+/* WHATSAPP BUTTON */
 
 .connect-button {
   text-decoration: none;
-  color: #7b4f3a;
-  border: 1px solid #d9a441;
-  padding: 10px 24px;
+  color: var(--ng-blue);
+  border: 1.5px solid var(--ng-blue);
+  padding: 9px 22px;
   border-radius: 30px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
   transition: 0.3s ease;
 }
 
 .connect-button:hover {
-  background: #f6df9b;
+  background: var(--ng-blue);
+  color: var(--ng-white);
 }
 
 
-/* ================= HERO ================= */
+/* ================= INTRO ================= */
 
-.hero {
-  min-height: 75vh;
+.intro {
+  padding: 55px 20px 90px;
+  background: var(--ng-white);
+}
+
+.intro-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* LOGO AREA */
+
+.intro-logo-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px 70px;
-  background: #fffaf3;
 }
 
-.hero-logo {
-  width: min(620px, 90%);
+.intro-logo {
+  width: 280px;
   height: auto;
+  opacity: 0.89;
 }
 
 
-/* ================= STORY ================= */
+/* TEXT AREA */
 
-.story {
-  padding: 90px 20px;
-  background: #f8f1e7;
+.intro-text {
+  text-align: left;
 }
 
-.story-content {
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: center;
-}
 
-.story h1 {
-  margin-bottom: 40px;
-  color: #6b7f5d;
-  font-size: clamp(32px, 5vw, 52px);
-  font-weight: 500;
-  line-height: 1.2;
-}
+/* MAIN QUESTION */
 
-.story p {
-  font-size: 19px;
-  line-height: 1.8;
-  margin: 24px 0;
-}
+.intro h1 {
+  margin: 0 0 18px;
 
-.story strong {
-  color: #9b6650;
+  color: var(--ng-blue);
+  font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
 }
 
-.story-highlight {
-  margin: 50px auto;
-  padding: 25px 30px;
+
+/* TAGLINE */
+
+.intro-tagline {
+  margin: 0 0 30px;
+
+  color: var(--ng-green);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.intro-tagline strong {
+  color: var(--ng-gold);
+  font-weight: 700;
+}
+
+
+/* DESCRIPTION */
+
+.intro-highlight {
   max-width: 700px;
-  background: #fffaf3;
-  border-left: 4px solid #d9a441;
-  border-radius: 10px;
+  padding: 24px 30px;
+
+  background: var(--ng-light-blue);
+
+  border-left: 4px solid var(--ng-gold);
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 64, 144, 0.05);
 }
 
-.story-highlight p {
+.intro-highlight p {
   margin: 0;
-  font-size: 22px;
-  color: #58705b;
+
+  color: var(--ng-green);
+  font-size: 18px;
+  line-height: 1.65;
 }
 
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 600px) {
-
-  .header {
-    height: 60px;
-    padding: 0 20px;
-  }
-
-  .hero {
-    min-height: 60vh;
-    padding: 30px 15px 50px;
-  }
-
-  .story {
-    padding: 65px 20px;
-  }
-
-  .story p {
-    font-size: 17px;
-  }
-
-  .story-highlight {
-    padding: 20px;
-  }
-
+.intro-highlight strong {
+  color: var(--ng-gold);
+  font-weight: 700;
 }
+
 
 /* ================= SUPPORT AREAS ================= */
 
 .support {
-  padding: 100px 20px;
-  background: #fffaf3;
+  padding: 110px 20px;
+  background: var(--ng-white);
 }
 
 .support-content {
@@ -155,10 +207,10 @@ body {
 }
 
 .support h2 {
-  color: #6b7f5d;
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 500;
-  margin-bottom: 60px;
+  color: var(--ng-blue);
+  font-size: clamp(34px, 4.2vw, 46px);
+  font-weight: 600;
+  margin-bottom: 55px;
 }
 
 .support-areas {
@@ -168,26 +220,49 @@ body {
 }
 
 .support-area {
-  padding: 40px 30px;
+  padding: 45px 30px;
   border-radius: 20px;
-  min-height: 280px;
+  min-height: 270px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+.support-area:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 64, 144, 0.08);
+}
+
+
+/* SKILLS */
 
 .skills-area {
-  background: #eef4e9;
+  background: var(--ng-light-blue);
+  border-top: 4px solid var(--ng-blue);
 }
+
+
+/* CAREERS */
 
 .careers-area {
-  background: #f8eee8;
+  background: var(--ng-light-gold);
+  border-top: 4px solid var(--ng-gold);
 }
 
+
+/* LIFE */
+
 .life-area {
-  background: #eef5f3;
+  background: var(--ng-light-green);
+  border-top: 4px solid var(--ng-green);
 }
+
 
 .support-icon {
   font-size: 38px;
@@ -195,22 +270,252 @@ body {
 }
 
 .support-area h3 {
-  margin: 5px 0 18px;
-  color: #58705b;
-  font-size: 24px;
-  letter-spacing: 2px;
+  margin: 5px 0 16px;
+  color: var(--ng-blue);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+.careers-area h3 {
+  color: var(--ng-gold);
+}
+
+.life-area h3 {
+  color: var(--ng-green);
 }
 
 .support-area p {
   margin: 0;
-  color: #596b5d;
+  color: var(--ng-text);
   font-size: 17px;
   line-height: 1.7;
-  max-width: 270px;
 }
 
 
-/* ================= MOBILE ================= */
+/* ================= LEARNING AROUND YOUR GOAL ================= */
+
+.goal-section {
+  padding: 110px 20px;
+  background: var(--ng-light-yellow);
+}
+
+.goal-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* SECTION LABEL */
+
+.goal-label {
+  margin: 0 0 14px;
+  color: var(--ng-gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+/* MAIN HEADING */
+
+.goal-content h2 {
+  margin: 0 auto 20px;
+  color: var(--ng-blue);
+  font-size: clamp(34px, 4.2vw, 46px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+
+/* INTRO */
+
+.goal-intro {
+  max-width: 680px;
+  margin: 0 auto 55px;
+  color: var(--ng-text);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+
+/* CARDS */
+
+.goal-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.goal-card {
+  min-height: 220px;
+  padding: 35px 25px;
+
+  background: var(--ng-white);
+  border-radius: 18px;
+  border: 1px solid rgba(0, 64, 144, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 64, 144, 0.09);
+}
+
+
+/* CARD ICON */
+
+.goal-icon {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: var(--ng-light-green);
+  color: var(--ng-green);
+  font-size: 23px;
+}
+
+
+/* CARD HEADING */
+
+.goal-card h3 {
+  margin: 0 0 12px;
+  color: var(--ng-blue);
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: 1.2px;
+}
+
+
+/* CARD TEXT */
+
+.goal-card p {
+  margin: 0;
+  max-width: 270px;
+  color: var(--ng-text);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* FOOTER STATEMENT */
+
+.goal-footer {
+  margin-top: 50px;
+  color: var(--ng-green);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+
+/* ================= CONNECT ================= */
+
+.connect {
+  padding: 110px 20px;
+  background: var(--ng-light-green);
+  color: var(--ng-text);
+  border-top: 1px solid #E5EAF0;
+}
+
+.connect-content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* LABEL */
+
+.connect-label {
+  margin: 0 0 16px;
+  color: var(--ng-gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.connect h2 {
+  margin: 0 auto 22px;
+  color: var(--ng-blue);
+  font-size: clamp(34px, 4.5vw, 48px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+
+/* PARAGRAPH */
+
+.connect p {
+  max-width: 620px;
+  margin: 18px auto;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ng-text);
+}
+
+.connect strong {
+  color: var(--ng-green);
+}
+
+
+/* BUTTON */
+
+.connect-main-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 34px;
+
+  border: 2px solid var(--ng-gold);
+  border-radius: 30px;
+
+  background: var(--ng-gold);
+  color: var(--ng-blue);
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  transition: 0.3s ease;
+}
+
+.connect-main-button:hover {
+  background: var(--ng-blue);
+  border-color: var(--ng-blue);
+  color: var(--ng-white);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .goal-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
 
 @media (max-width: 750px) {
 
@@ -222,172 +527,130 @@ body {
   .support-area {
     min-height: 230px;
   }
-}
-
-/* ================= HOW IT WORKS ================= */
-
-.how-it-works {
-  padding: 110px 20px;
-  background: #f8f1e7;
-}
-
-.how-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.how-it-works h2 {
-  color: #6b7f5d;
-  font-size: clamp(30px, 4vw, 44px);
-  font-weight: 500;
-  line-height: 1.25;
-  margin-bottom: 25px;
-}
-
-.how-intro {
-  max-width: 700px;
-  margin: 0 auto 65px;
-  color: #596b5d;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.step {
-  background: #fffaf3;
-  padding: 35px 25px;
-  border-radius: 20px;
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.step-number {
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: #d9a441;
-  font-weight: bold;
-  margin-bottom: 18px;
-}
-
-.step h3 {
-  margin: 0 0 18px;
-  color: #58705b;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.step p {
-  margin: 0;
-  color: #596b5d;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-
-/* ================= CONNECT ================= */
-
-.connect {
-  padding: 120px 20px;
-  background: #6b7f5d;
-  color: #fffaf3;
-}
-
-.connect-content {
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.connect h2 {
-  font-size: clamp(32px, 5vw, 50px);
-  font-weight: 500;
-  line-height: 1.2;
-  margin: 0 0 30px;
-}
-
-.connect p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 18px 0;
-}
-
-.connect strong {
-  color: #f6df9b;
-}
-
-.connect-main-button {
-  margin-top: 35px;
-  padding: 14px 34px;
-  border: 1px solid #f6df9b;
-  border-radius: 30px;
-  background: #fffaf3;
-  color: #58705b;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.connect-main-button:hover {
-  background: #f6df9b;
-  color: #4f5f52;
-}
-
-
-/* ================= FOOTER ================= */
-
-footer {
-  padding: 25px 20px;
-  text-align: center;
-  background: #fffaf3;
-  color: #7b4f3a;
-  font-size: 14px;
-}
-
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 900px) {
-
-  .steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
 }
 
 
 @media (max-width: 600px) {
 
-  .how-it-works {
-    padding: 80px 20px;
+  /* HEADER */
+
+  .header {
+    height: auto;
+    min-height: 60px;
+    padding: 12px 18px;
+    gap: 12px;
   }
 
-  .how-intro {
-    margin-bottom: 45px;
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.8px;
+  }
+
+  .connect-button {
+    padding: 8px 14px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+
+  /* INTRO */
+
+  .intro {
+    padding: 25px 20px 65px;
+  }
+
+  .intro-logo {
+    width: 190px;
+    margin-bottom: 24px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .intro-tagline {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
+
+  .intro-highlight {
+    padding: 22px 20px;
+  }
+
+  .intro-highlight p {
     font-size: 17px;
   }
 
-  .steps {
+
+  /* SUPPORT */
+
+  .support {
+    padding: 80px 20px;
+  }
+
+  .support h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .support-area h3 {
+    font-size: 21px;
+  }
+
+  .support-area p {
+    font-size: 17px;
+  }
+
+
+  /* GOAL */
+
+  .goal-section {
+    padding: 80px 20px;
+  }
+
+  .goal-content h2 {
+    font-size: 34px;
+  }
+
+  .goal-intro {
+    font-size: 17px;
+  }
+
+  .goal-options {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .step {
-    min-height: 230px;
+  .goal-card {
+    min-height: 200px;
   }
 
+  .goal-card h3 {
+    font-size: 17px;
+  }
+
+  .goal-card p {
+    font-size: 16px;
+  }
+
+  .goal-footer {
+    font-size: 18px;
+  }
+
+
+  /* CONNECT */
+
   .connect {
-    padding: 90px 20px;
+    padding: 85px 20px;
+  }
+
+  .connect h2 {
+    font-size: 34px;
   }
 
   .connect p {
