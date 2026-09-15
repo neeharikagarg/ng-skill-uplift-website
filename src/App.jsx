@@ -14,6 +14,7 @@ function App() {
         <nav className="nav-links">
           <a href="#support">GROW</a>
           <a href="#learning">LEARNING</a>
+          <a href="#phase1">PLANS</a>
           <a href="#expertise">EXPERTISE</a>
           <a href="#connect">CONNECT</a>
         </nav>
@@ -301,6 +302,98 @@ function App() {
 
             <span className="footer-line"></span>
 
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          PHASE 1 — QA & AUTOMATION
+          ===================================================== */}
+
+      <section className="phase1" id="phase1">
+
+        <div className="phase1-content">
+
+          <p className="phase1-label">
+            PHASE 1 — QA &amp; AUTOMATION
+          </p>
+
+          <h2>
+            Build practical skills. Move forward with confidence.
+          </h2>
+
+          <p className="phase1-intro">
+            Customized online sessions for freshers, testers and IT professionals —
+            shaped around your current skills, goals and needs.
+          </p>
+
+          <div className="phase1-grid">
+
+            <div className="phase1-card">
+              <div className="phase1-number">01</div>
+              <h3>Manual Testing → Automation</h3>
+              <p>Move from manual testing to practical automation skills.</p>
+              <ul>
+                <li>Software Testing Fundamentals</li>
+                <li>Test Case Design</li>
+                <li>Defect Lifecycle &amp; Jira</li>
+                <li>API Testing Basics</li>
+                <li>Selenium with Java</li>
+                <li>TestNG • Maven • Git • Jenkins / CI-CD</li>
+              </ul>
+            </div>
+
+            <div className="phase1-card">
+              <div className="phase1-number">02</div>
+              <h3>API Automation with Rest Assured</h3>
+              <p>Learn API automation through practical, hands-on testing.</p>
+              <ul>
+                <li>REST API Fundamentals</li>
+                <li>HTTP Methods &amp; Status Codes</li>
+                <li>Headers &amp; Query / Path Parameters</li>
+                <li>Authentication &amp; Validation</li>
+                <li>JSON &amp; DTO • API Chaining</li>
+                <li>Data-Driven Testing • Reporting • Jenkins</li>
+              </ul>
+            </div>
+
+            <div className="phase1-card">
+              <div className="phase1-number">03</div>
+              <h3>Playwright Automation</h3>
+              <p>Build modern UI automation skills with a real project approach.</p>
+              <ul>
+                <li>Playwright Fundamentals &amp; Locators</li>
+                <li>UI Automation &amp; Assertions</li>
+                <li>Page Object Model</li>
+                <li>Test Data &amp; Reports</li>
+                <li>Parallel Execution</li>
+                <li>CI/CD • Real Project Framework</li>
+              </ul>
+            </div>
+
+            <div className="phase1-card">
+              <div className="phase1-number">04</div>
+              <h3>QA Automation Interview Accelerator</h3>
+              <p>Prepare your skills, resume and interview approach.</p>
+              <ul>
+                <li>QA &amp; Automation Interview Questions</li>
+                <li>Automation Coding &amp; API Questions</li>
+                <li>Framework &amp; Scenario-Based Questions</li>
+                <li>Managerial QA Questions</li>
+                <li>Resume Improvement</li>
+                <li>Mock Interviews</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="phase1-footer">
+            <span className="phase1-line"></span>
+            <strong>Customized sessions • Charges per session</strong>
+            <span className="phase1-line"></span>
           </div>
 
         </div>
