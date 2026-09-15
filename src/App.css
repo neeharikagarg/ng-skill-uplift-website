@@ -165,7 +165,6 @@ body {
   margin: 0 auto;
 
   display: grid;
-
   grid-template-columns: 300px 1fr;
 
   gap: 75px;
@@ -212,7 +211,6 @@ body {
 
   font-size: 12px;
   font-weight: 700;
-
   letter-spacing: 3px;
 }
 
@@ -262,7 +260,6 @@ body {
   color: var(--ng-green);
 
   font-size: 17px;
-
   line-height: 1.7;
 }
 
@@ -343,7 +340,6 @@ body {
   color: var(--ng-text);
 
   font-size: 17px;
-
   line-height: 1.75;
 }
 
@@ -474,7 +470,6 @@ body {
 
 .support-icon {
   font-size: 36px;
-
   margin-bottom: 15px;
 }
 
@@ -544,7 +539,6 @@ body {
   color: var(--ng-gold);
 
   font-size: 12px;
-
   font-weight: 700;
 
   letter-spacing: 3px;
@@ -675,6 +669,7 @@ body {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   color: var(--ng-blue);
@@ -735,7 +730,6 @@ body {
 
 .footer-line {
   width: 55px;
-
   height: 1px;
 
   background:
@@ -760,208 +754,18 @@ body {
 }
 
 
-
 /* =========================================================
    EXPERIENCE & EXPERTISE
    ========================================================= */
 
 .expertise {
   background: var(--ng-white);
+
   padding: 100px 20px 110px;
 }
 
 .expertise-content {
   max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.expertise-label {
-  margin: 0 0 14px;
-  color: var(--ng-green);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.expertise h2 {
-  margin: 0 auto 22px;
-  max-width: 760px;
-  color: var(--ng-blue);
-  font-size: clamp(28px, 3.2vw, 40px);
-  line-height: 1.25;
-  font-weight: 700;
-}
-
-.expertise-intro {
-  max-width: 700px;
-  margin: 0 auto 55px;
-  color: var(--ng-text);
-  font-size: 17px;
-  line-height: 1.75;
-}
-
-.expertise-intro strong {
-  color: var(--ng-blue);
-}
-
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.expertise-card {
-  min-height: 175px;
-  padding: 28px 22px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(0, 64, 144, 0.10);
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.expertise-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(0, 96, 48, 0.22);
-  box-shadow: 0 12px 30px rgba(0, 64, 144, 0.08);
-}
-
-.expertise-icon {
-  width: 42px;
-  height: 42px;
-  margin-bottom: 14px;
-  border-radius: 50%;
-  background: rgba(240, 160, 0, 0.12);
-  color: var(--ng-gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-
-.expertise-card h3 {
-  margin: 0 0 12px;
-  color: var(--ng-blue);
-  font-size: 15px;
-  letter-spacing: 1.4px;
-  font-weight: 700;
-}
-
-.expertise-card p {
-  margin: 0;
-  color: var(--ng-text);
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.expertise-footer {
-  margin-top: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  color: var(--ng-green);
-  font-size: 15px;
-  letter-spacing: 0.4px;
-}
-
-.expertise-line {
-  width: 55px;
-  height: 1px;
-  background: rgba(0, 96, 48, 0.28);
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-  .expertise {
-    padding: 85px 20px 95px;
-  }
-
-  .expertise-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 720px;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 750px) {
-
-  .expertise {
-    padding: 70px 20px 85px;
-  }
-
-  .expertise-label {
-    font-size: 12px;
-    letter-spacing: 2.5px;
-  }
-
-  .expertise h2 {
-    font-size: 29px;
-    line-height: 1.3;
-  }
-
-  .expertise-intro {
-    margin-bottom: 40px;
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .expertise-card {
-    min-height: auto;
-    padding: 25px 20px;
-  }
-
-  .expertise-footer {
-    margin-top: 42px;
-    gap: 10px;
-    font-size: 13px;
-  }
-
-  .expertise-line {
-    width: 30px;
-  }
-
-}
-
-/* =========================================================
-   ABOUT NEEHARIKA
-   ========================================================= */
-
-.about {
-  padding: 105px 20px 110px;
-
-  background: var(--ng-white);
-
-  border-top:
-    1px solid rgba(0, 64, 144, 0.05);
-}
-
-.about-content {
-  max-width: 900px;
 
   margin: 0 auto;
 
@@ -971,80 +775,83 @@ body {
 
 /* LABEL */
 
-.about-label {
+.expertise-label {
   margin: 0 0 14px;
 
-  color: var(--ng-gold);
+  color: var(--ng-green);
 
-  font-size: 12px;
+  font-size: 13px;
 
   font-weight: 700;
 
   letter-spacing: 3px;
-
-  text-transform: uppercase;
 }
 
 
-/* HEADING */
+/* MAIN HEADING */
 
-.about h2 {
+.expertise h2 {
+  margin: 0 auto 22px;
+
   max-width: 760px;
-
-  margin: 0 auto 32px;
 
   color: var(--ng-blue);
 
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(28px, 3.2vw, 40px);
 
-  font-weight: 600;
+  line-height: 1.25;
 
-  line-height: 1.3;
+  font-weight: 700;
 }
 
 
-/* TEXT */
+/* INTRO */
 
-.about-text {
+.expertise-intro {
   max-width: 720px;
 
-  margin: 0 auto;
-}
-
-.about-text p {
-  margin: 0 auto 18px;
+  margin: 0 auto 52px;
 
   color: var(--ng-text);
 
   font-size: 17px;
 
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
-.about-text strong {
-  color: var(--ng-green);
-
-  font-weight: 700;
+.expertise-intro strong {
+  color: var(--ng-blue);
 }
 
 
-/* EXPERIENCE HIGHLIGHTS */
+/* =========================================================
+   EXPERTISE CARDS
+   ========================================================= */
 
-.about-highlights {
-  margin-top: 45px;
-
+.expertise-grid {
   display: grid;
 
   grid-template-columns:
     repeat(3, 1fr);
 
-  gap: 20px;
+  gap: 22px;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
 }
 
-.about-highlight {
-  min-height: 135px;
+.expertise-card {
+  min-height: 175px;
 
-  padding: 25px 18px;
+  padding: 28px 22px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border:
+    1px solid rgba(0, 64, 144, 0.10);
+
+  border-radius: 18px;
 
   display: flex;
 
@@ -1054,71 +861,459 @@ body {
 
   justify-content: center;
 
-  background: var(--ng-light-blue);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(0, 96, 48, 0.22);
+
+  box-shadow:
+    0 12px 30px rgba(0, 64, 144, 0.08);
+}
+
+
+/* ICON */
+
+.expertise-icon {
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(240, 160, 0, 0.12);
+
+  color: var(--ng-gold);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+
+/* CARD HEADING */
+
+.expertise-card h3 {
+  margin: 0 0 12px;
+
+  color: var(--ng-blue);
+
+  font-size: 15px;
+
+  letter-spacing: 1.4px;
+
+  font-weight: 700;
+}
+
+
+/* CARD TEXT */
+
+.expertise-card p {
+  margin: 0;
+
+  color: var(--ng-text);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   REAL-WORLD EXPERIENCE
+   ========================================================= */
+
+.real-world {
+  max-width: 1000px;
+
+  margin: 70px auto 0;
+
+  padding-top: 55px;
+
+  border-top:
+    1px solid rgba(0, 64, 144, 0.08);
+}
+
+.real-world-label {
+  margin: 0 0 30px;
+
+  color: var(--ng-gold);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+/* EXPERIENCE DOMAIN GRID */
+
+.experience-domains {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+
+/* DOMAIN CARD */
+
+.experience-domain {
+  min-height: 145px;
+
+  padding: 24px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  text-align: left;
+
+  background: var(--ng-white);
+
+  border:
+    1px solid rgba(0, 64, 144, 0.08);
 
   border-radius: 18px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.experience-domain:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(240, 160, 0, 0.22);
+
+  box-shadow:
+    0 10px 25px rgba(0, 64, 144, 0.07);
+}
+
+
+/* DOMAIN ICON */
+
+.domain-icon {
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--ng-light-gold);
+
+  font-size: 20px;
+}
+
+
+/* DOMAIN HEADING */
+
+.experience-domain h3 {
+  margin: 1px 0 8px;
+
+  color: var(--ng-blue);
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  line-height: 1.4;
+}
+
+
+/* COMPANIES */
+
+.experience-domain p {
+  margin: 0 0 7px;
+
+  color: var(--ng-green);
+
+  font-size: 14px;
+
+  font-weight: 650;
+
+  line-height: 1.5;
+}
+
+
+/* DETAILS */
+
+.experience-domain small {
+  display: block;
+
+  color: var(--ng-text);
+
+  font-size: 12.5px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   CORE EXPERTISE
+   ========================================================= */
+
+.core-expertise {
+  max-width: 900px;
+
+  margin: 38px auto 0;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 9px;
+}
+
+.core-expertise span {
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: var(--ng-light-blue);
 
   border:
     1px solid rgba(0, 64, 144, 0.07);
 
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  color: var(--ng-blue);
+
+  font-size: 11.5px;
+
+  font-weight: 650;
+
+  letter-spacing: 0.3px;
 }
 
-.about-highlight:nth-child(2) {
+
+/* =========================================================
+   ABOUT NEEHARIKA - COMBINED
+   ========================================================= */
+
+.neeha-profile {
+  max-width: 850px;
+
+  margin: 65px auto 0;
+
+  padding-top: 55px;
+
+  border-top:
+    1px solid rgba(0, 64, 144, 0.08);
+}
+
+
+/* LABEL */
+
+.neeha-label {
+  margin: 0 0 13px;
+
+  color: var(--ng-green);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+/* HEADING */
+
+.neeha-profile h3 {
+  margin: 0 auto 20px;
+
+  max-width: 700px;
+
+  color: var(--ng-blue);
+
+  font-size: 24px;
+
+  font-weight: 650;
+
+  line-height: 1.4;
+}
+
+
+/* DESCRIPTION */
+
+.neeha-description {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: var(--ng-text);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.neeha-description strong {
+  color: var(--ng-green);
+}
+
+
+/* =========================================================
+   NEEHARIKA HIGHLIGHTS
+   ========================================================= */
+
+.neeha-highlights {
+  max-width: 720px;
+
+  margin: 38px auto 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.neeha-highlights > div {
+  min-height: 110px;
+
+  padding: 20px 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: var(--ng-light-blue);
+
+  border:
+    1px solid rgba(0, 64, 144, 0.07);
+}
+
+.neeha-highlights > div:nth-child(2) {
   background: var(--ng-light-gold);
 }
 
-.about-highlight:nth-child(3) {
+.neeha-highlights > div:nth-child(3) {
   background: var(--ng-light-green);
-}
-
-.about-highlight:hover {
-  transform: translateY(-4px);
-
-  box-shadow:
-    0 12px 28px rgba(0, 64, 144, 0.07);
 }
 
 
 /* NUMBERS */
 
-.about-number {
-  margin-bottom: 8px;
+.neeha-highlights strong {
+  margin-bottom: 7px;
 
   color: var(--ng-blue);
 
-  font-size: 30px;
+  font-size: 28px;
 
   font-weight: 700;
 
   line-height: 1;
 }
 
-.about-highlight:nth-child(2) .about-number {
+.neeha-highlights > div:nth-child(2) strong {
   color: var(--ng-gold);
 }
 
-.about-highlight:nth-child(3) .about-number {
+.neeha-highlights > div:nth-child(3) strong {
   color: var(--ng-green);
 }
 
 
 /* TITLES */
 
-.about-title {
+.neeha-highlights span {
   color: var(--ng-text);
 
-  font-size: 11px;
+  font-size: 10px;
 
   font-weight: 700;
 
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
 
   line-height: 1.5;
 
   text-align: center;
+}
+
+
+/* =========================================================
+   NEEHARIKA MOTTO
+   ========================================================= */
+
+.neeha-motto {
+  max-width: 650px;
+
+  margin: 30px auto 0;
+
+  color: var(--ng-green);
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   EXPERTISE FOOTER
+   ========================================================= */
+
+.expertise-footer {
+  margin-top: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  color: var(--ng-green);
+
+  font-size: 15px;
+
+  letter-spacing: 0.4px;
+}
+
+.expertise-line {
+  width: 55px;
+  height: 1px;
+
+  background:
+    rgba(0, 96, 48, 0.28);
 }
 
 
@@ -1343,9 +1538,10 @@ body {
 
 @media (max-width: 900px) {
 
+  /* INTRO */
+
   .intro-content {
     grid-template-columns: 250px 1fr;
-
     gap: 45px;
   }
 
@@ -1353,10 +1549,36 @@ body {
     width: 235px;
   }
 
+
+  /* LEARNING */
+
   .goal-options {
     grid-template-columns:
       repeat(2, 1fr);
   }
+
+
+  /* EXPERTISE */
+
+  .expertise {
+    padding: 85px 20px 95px;
+  }
+
+  .expertise-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    max-width: 720px;
+  }
+
+
+  /* REAL WORLD */
+
+  .experience-domains {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
 }
 
 
@@ -1396,31 +1618,6 @@ body {
     letter-spacing: 0.8px;
 
     white-space: nowrap;
-  }
-
-
-  /* ================= ABOUT ================= */
-
-  .about {
-    padding: 80px 20px 85px;
-  }
-
-  .about h2 {
-    font-size: 31px;
-  }
-
-  .about-text p {
-    font-size: 16px;
-  }
-
-  .about-highlights {
-    grid-template-columns: 1fr;
-
-    gap: 14px;
-  }
-
-  .about-highlight {
-    min-height: 120px;
   }
 
 
@@ -1592,6 +1789,187 @@ body {
   }
 
 
+  /* ================= EXPERIENCE ================= */
+
+  .expertise {
+    padding:
+      70px
+      20px
+      85px;
+  }
+
+  .expertise-label {
+    font-size: 12px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .expertise h2 {
+    font-size: 29px;
+
+    line-height: 1.3;
+  }
+
+  .expertise-intro {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .expertise-card {
+    min-height: auto;
+
+    padding:
+      25px
+      20px;
+  }
+
+
+  /* ================= REAL WORLD ================= */
+
+  .real-world {
+    margin-top: 50px;
+
+    padding-top: 45px;
+  }
+
+  .real-world-label {
+    margin-bottom: 24px;
+
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .experience-domains {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .experience-domain {
+    min-height: auto;
+
+    padding:
+      20px
+      18px;
+
+    gap: 14px;
+
+    border-radius: 16px;
+  }
+
+  .domain-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 18px;
+  }
+
+  .experience-domain h3 {
+    font-size: 13px;
+
+    letter-spacing: 1px;
+  }
+
+  .experience-domain p {
+    font-size: 13.5px;
+  }
+
+  .experience-domain small {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+
+
+  /* ================= CORE EXPERTISE ================= */
+
+  .core-expertise {
+    margin-top: 30px;
+
+    gap: 7px;
+  }
+
+  .core-expertise span {
+    padding:
+      7px
+      11px;
+
+    font-size: 10.5px;
+  }
+
+
+  /* ================= ABOUT / NEEHARIKA ================= */
+
+  .neeha-profile {
+    margin-top: 50px;
+
+    padding-top: 45px;
+  }
+
+  .neeha-label {
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .neeha-profile h3 {
+    font-size: 21px;
+
+    line-height: 1.4;
+  }
+
+  .neeha-description {
+    font-size: 15.5px;
+
+    line-height: 1.75;
+  }
+
+  .neeha-highlights {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-top: 30px;
+  }
+
+  .neeha-highlights > div {
+    min-height: 95px;
+  }
+
+  .neeha-motto {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  /* ================= EXPERTISE FOOTER ================= */
+
+  .expertise-footer {
+    margin-top: 42px;
+
+    gap: 10px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .expertise-line {
+    width: 30px;
+  }
+
+
   /* ================= CONNECT ================= */
 
   .connect {
@@ -1644,4 +2022,5 @@ body {
   .footer-motto {
     font-size: 12px;
   }
+
 }

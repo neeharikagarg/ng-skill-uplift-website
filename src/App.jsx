@@ -38,8 +38,6 @@ function App() {
 
         <div className="intro-content">
 
-          {/* LOGO */}
-
           <div className="intro-logo-area">
 
             <img
@@ -50,8 +48,6 @@ function App() {
 
           </div>
 
-
-          {/* HERO TEXT */}
 
           <div className="intro-text">
 
@@ -83,8 +79,6 @@ function App() {
 
         </div>
 
-
-        {/* DIVIDER */}
 
         <div className="section-divider">
           ✦
@@ -119,8 +113,6 @@ function App() {
 
           <div className="support-areas">
 
-            {/* SKILLS */}
-
             <div className="support-area skills-area">
 
               <div className="support-icon">
@@ -140,8 +132,6 @@ function App() {
             </div>
 
 
-            {/* CAREERS */}
-
             <div className="support-area careers-area">
 
               <div className="support-icon">
@@ -160,8 +150,6 @@ function App() {
 
             </div>
 
-
-            {/* LIFE */}
 
             <div className="support-area life-area">
 
@@ -213,8 +201,6 @@ function App() {
 
           <div className="goal-options">
 
-            {/* TECHNOLOGY */}
-
             <div className="goal-card">
 
               <div className="goal-icon">
@@ -232,8 +218,6 @@ function App() {
             </div>
 
 
-            {/* LIVE LABS */}
-
             <div className="goal-card">
 
               <div className="goal-icon">
@@ -250,8 +234,6 @@ function App() {
 
             </div>
 
-
-            {/* FOCUSED SESSIONS */}
 
             <div className="goal-card">
 
@@ -271,28 +253,6 @@ function App() {
             </div>
 
 
-            {/* CUSTOMIZED COURSES */}
-
-            <div className="goal-card">
-
-              <div className="goal-icon">
-                ✦
-              </div>
-
-              <h3>
-                CUSTOMIZED COURSES
-              </h3>
-
-              <p>
-                A learning path shaped around
-                your needs and pace.
-              </p>
-
-            </div>
-
-
-            {/* RESUME HELP */}
-
             <div className="goal-card">
 
               <div className="goal-icon">
@@ -300,38 +260,16 @@ function App() {
               </div>
 
               <h3>
-                RESUME HELP
+                RESUME &amp; INTERVIEW
               </h3>
 
               <p>
-                Build a resume that clearly presents
-                your skills and experience.
+                Present your experience clearly
+                and prepare with confidence.
               </p>
 
             </div>
 
-
-            {/* INTERVIEW PREPARATION */}
-
-            <div className="goal-card">
-
-              <div className="goal-icon">
-                ◉
-              </div>
-
-              <h3>
-                INTERVIEW PREPARATION
-              </h3>
-
-              <p>
-                Prepare with focused practice,
-                guidance and confidence.
-              </p>
-
-            </div>
-
-
-            {/* MOTIVATION */}
 
             <div className="goal-card">
 
@@ -353,8 +291,6 @@ function App() {
           </div>
 
 
-          {/* GOAL FOOTER */}
-
           <div className="goal-footer">
 
             <span className="footer-line"></span>
@@ -372,192 +308,393 @@ function App() {
       </section>
 
 
-      {/* ================= EXPERIENCE & EXPERTISE ================= */}
+      {/* =====================================================
+          EXPERIENCE & EXPERTISE
+          ===================================================== */}
+
       <section className="expertise" id="expertise">
+
         <div className="expertise-content">
 
-          <p className="expertise-label">EXPERIENCE &amp; EXPERTISE</p>
+          <p className="expertise-label">
+            EXPERIENCE &amp; EXPERTISE
+          </p>
 
-          <h2>Experience that connects technology, quality and people.</h2>
+          <h2>
+            Technology. Quality. Leadership. Real-world impact.
+          </h2>
 
           <p className="expertise-intro">
-            <strong>16+ years</strong> of technology and quality engineering
-            experience, including <strong>4 years of USA onsite experience</strong>,
-            across enterprise technology, leadership and teaching.
+            With <strong>16+ years in technology and quality engineering</strong>,
+            including <strong>4 years of USA onsite experience</strong>,
+            Neeharika brings practical expertise across{" "}
+            <strong>
+              digital identity, civil registration, BFSI, insurance,
+              travel and enterprise technology.
+            </strong>
           </p>
+
+
+          {/* =================================================
+              EXPERTISE CARDS
+              ================================================= */}
 
           <div className="expertise-grid">
 
             <div className="expertise-card">
-              <div className="expertise-icon">⌘</div>
-              <h3>TECHNOLOGY</h3>
+
+              <div className="expertise-icon">
+                ⌘
+              </div>
+
+              <h3>
+                TECHNOLOGY
+              </h3>
+
               <p>
                 Frontend • Backend • APIs • Integration
                 <br />
-                Databases &amp; SQL • ETL • Data Warehousing
+                Databases • SQL • ETL • Data
               </p>
+
             </div>
 
+
             <div className="expertise-card">
-              <div className="expertise-icon">◈</div>
-              <h3>QUALITY ENGINEERING</h3>
+
+              <div className="expertise-icon">
+                ◈
+              </div>
+
+              <h3>
+                QUALITY ENGINEERING
+              </h3>
+
               <p>
-                QA Strategy • E2E Testing • Automation
+                QA Strategy • E2E • Automation
                 <br />
-                API Testing • SIT • UAT • Performance
+                API • SIT • UAT • Performance
               </p>
+
             </div>
 
+
             <div className="expertise-card">
-              <div className="expertise-icon">◎</div>
-              <h3>ENGINEERING &amp; DELIVERY</h3>
+
+              <div className="expertise-icon">
+                ◎
+              </div>
+
+              <h3>
+                ENGINEERING &amp; DELIVERY
+              </h3>
+
               <p>
                 CI/CD • DevOps • Agile
                 <br />
-                Release Management • Quality Governance
+                Release • Quality Governance
               </p>
+
             </div>
 
+
             <div className="expertise-card">
-              <div className="expertise-icon">✦</div>
-              <h3>LEADERSHIP</h3>
+
+              <div className="expertise-icon">
+                ✦
+              </div>
+
+              <h3>
+                LEADERSHIP
+              </h3>
+
               <p>
                 Team Leadership • Mentoring
                 <br />
-                Stakeholder Management • Delivery
+                Stakeholders • Delivery
               </p>
+
             </div>
 
+
             <div className="expertise-card">
-              <div className="expertise-icon">◇</div>
-              <h3>INDUSTRY EXPERIENCE</h3>
+
+              <div className="expertise-icon">
+                ◇
+              </div>
+
+              <h3>
+                INDUSTRY DOMAINS
+              </h3>
+
               <p>
-                Government • BFSI • Insurance
+                Digital Identity • BFSI • Insurance
                 <br />
-                Travel • Information Services
+                Government • Travel &amp; Hospitality • Enterprise
               </p>
+
             </div>
 
+
             <div className="expertise-card">
-              <div className="expertise-icon">♡</div>
-              <h3>ACADEMIC FOUNDATION</h3>
+
+              <div className="expertise-icon">
+                ♡
+              </div>
+
+              <h3>
+                ACADEMIC FOUNDATION
+              </h3>
+
               <p>
                 M.Tech in Computer Science
                 <br />
-                Academic Teaching • AI Foundation
+                Teaching • AI &amp; Emerging Technology
               </p>
+
             </div>
 
           </div>
 
-          <div className="expertise-footer">
-            <span className="expertise-line"></span>
-            <strong>Industry experience. Practical learning. Meaningful growth.</strong>
-            <span className="expertise-line"></span>
+
+          {/* =================================================
+              REAL-WORLD EXPERIENCE
+              ================================================= */}
+
+          <div className="real-world">
+
+            <p className="real-world-label">
+              REAL-WORLD EXPERIENCE
+            </p>
+
+            <div className="experience-domains">
+
+              <div className="experience-domain">
+
+                <span className="domain-icon">
+                  🌍
+                </span>
+
+                <div>
+
+                  <h3>
+                    USA ONSITE
+                  </h3>
+
+                  <p>
+                    LexisNexis • Great American Insurance
+                  </p>
+
+                  <small>
+                    4 years onsite • QA Leadership • Automation
+                    • Client Delivery
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <div className="experience-domain">
+
+                <span className="domain-icon">
+                  🆔
+                </span>
+
+                <div>
+
+                  <h3>
+                    IDENTITY &amp; CIVIL REGISTRATION
+                  </h3>
+
+                  <p>
+                    MOSIP • OpenCRVS • Technoforte
+                  </p>
+
+                  <small>
+                    Digital Identity • National ID • Birth &amp;
+                    Death Registration • Production
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <div className="experience-domain">
+
+                <span className="domain-icon">
+                  🏦
+                </span>
+
+                <div>
+
+                  <h3>
+                    BFSI &amp; ENTERPRISE
+                  </h3>
+
+                  <p>
+                    Allstate • Wells Fargo
+                  </p>
+
+                  <small>
+                    Insurance • Banking • ETL • Enterprise Testing
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <div className="experience-domain">
+
+                <span className="domain-icon">
+                  ✈️
+                </span>
+
+                <div>
+
+                  <h3>
+                    TRAVEL &amp; HOSPITALITY
+                  </h3>
+
+                  <p>
+                    SABRE
+                  </p>
+
+                  <small>
+                    Travel Technology • QA • System Testing
+                    • Enterprise Delivery
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <div className="experience-domain">
+
+                <span className="domain-icon">
+                  📦
+                </span>
+
+                <div>
+
+                  <h3>
+                    SUPPLY CHAIN
+                  </h3>
+
+                  <p>
+                    PALMS
+                  </p>
+
+                  <small>
+                    Warehousing • Performance Testing
+                    • System Testing • Delivery
+                  </small>
+
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
-        </div>
-      </section>
 
-      {/* =====================================================
-          ABOUT NEEHARIKA
-          ===================================================== */}
+          {/* =================================================
+              CORE EXPERTISE
+              ================================================= */}
 
-      <section className="about" id="about">
+          <div className="core-expertise">
 
-        <div className="about-content">
-
-          <p className="about-label">
-            ABOUT NEEHARIKA
-          </p>
-
-          <h2>
-            Experience that brings learning closer to reality.
-          </h2>
-
-
-          <div className="about-text">
-
-            <p>
-              With{" "}
-              <strong>
-                16+ years of corporate IT experience
-              </strong>
-              , Neeharika brings hands-on experience across
-              technology, software quality, leadership and
-              career growth.
-            </p>
-
-            <p>
-              Alongside her corporate journey, she also brings{" "}
-              <strong>
-                2+ years of academic teaching experience
-              </strong>
-              , helping learners understand concepts,
-              build practical skills and connect learning
-              with real-world opportunities.
-            </p>
-
-            <p>
-              NG SkillUplift brings these two experiences
-              together —{" "}
-              <strong>
-                industry experience and teaching
-              </strong>{" "}
-              — to help people learn with clarity,
-              confidence and purpose.
-            </p>
+            <span>QA Leadership</span>
+            <span>People Management</span>
+            <span>Automation</span>
+            <span>API Testing</span>
+            <span>Performance Testing</span>
+            <span>SIT / UAT</span>
+            <span>CI/CD</span>
+            <span>Quality Governance</span>
+            <span>Client Delivery</span>
 
           </div>
 
 
-          {/* EXPERIENCE HIGHLIGHTS */}
+          {/* =================================================
+              ABOUT NEEHARIKA
+              ================================================= */}
 
-          <div className="about-highlights">
+          <div className="neeha-profile">
 
-            <div className="about-highlight">
+            <p className="neeha-label">
+              ABOUT NEEHARIKA
+            </p>
 
-              <span className="about-number">
-                16+
-              </span>
+            <h3>
+              Industry experience. Practical learning. Meaningful growth.
+            </h3>
 
-              <span className="about-title">
-                YEARS
-                <br />
-                CORPORATE EXPERIENCE
-              </span>
+            <p className="neeha-description">
+              Neeharika brings together technology, quality engineering,
+              leadership and teaching experience to create practical
+              learning and meaningful guidance through NG SkillUplift.
+            </p>
+
+
+            <div className="neeha-highlights">
+
+              <div>
+
+                <strong>
+                  16+
+                </strong>
+
+                <span>
+                  YEARS IT
+                  <br />
+                  EXPERIENCE
+                </span>
+
+              </div>
+
+
+              <div>
+
+                <strong>
+                  4
+                </strong>
+
+                <span>
+                  YEARS USA
+                  <br />
+                  ONSITE
+                </span>
+
+              </div>
+
+
+              <div>
+
+                <strong>
+                  2+
+                </strong>
+
+                <span>
+                  YEARS
+                  <br />
+                  TEACHING
+                </span>
+
+              </div>
 
             </div>
 
 
-            <div className="about-highlight">
-
-              <span className="about-number">
-                2+
-              </span>
-
-              <span className="about-title">
-                YEARS
-                <br />
-                ACADEMIC TEACHING
-              </span>
-
-            </div>
-
-
-            <div className="about-highlight">
-
-              <span className="about-number">
-                NG
-              </span>
-
-              <span className="about-title">
-                SKILLS
-                <br />
-                CAREER &amp; LIFE
-              </span>
-
-            </div>
+            <p className="neeha-motto">
+              NG SkillUplift brings experience and learning together
+              to help people build skills, find clarity and grow.
+            </p>
 
           </div>
 
@@ -620,7 +757,6 @@ function App() {
 
         </div>
 
-
         <p className="footer-creator">
           Created by{" "}
           <strong>
@@ -628,11 +764,9 @@ function App() {
           </strong>
         </p>
 
-
         <p className="footer-experience">
           MTech | 16+ years of technology &amp; quality experience
         </p>
-
 
         <p className="footer-motto">
           Learn. Find clarity. Grow.
