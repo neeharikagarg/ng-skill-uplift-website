@@ -672,15 +672,21 @@ function App() {
 
           <div className="connect-action">
 
-           <a
-  href="https://wa.me/918197201901"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="book-slot-btn"
->
-  <span>Book Your Slot</span>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-large"
+            >
+
+              <span className="wa-icon">◉</span>
+
+               <span>Book Your Slot</span>
   <small>Connect with us on WhatsApp</small>
-</a>
+
+              <b>→</b>
+
+            </a>
 
             <p>
               Online sessions only • Scheduled based on your time
