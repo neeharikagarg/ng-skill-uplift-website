@@ -4,8 +4,11 @@ import clarityFlyer from "./assets/clarity-guidance-flyer.png";
 import programmingBasicsFlyer from "./assets/programming-basics-for-automation-flyer.png";
 import "./App.css";
 
-const WHATSAPP = "https://wa.me/918197201901";
-
+const WHATSAPP =
+  "https://wa.me/918197201901?text=" +
+  encodeURIComponent(
+    "Hi Neeha, I’m interested in NG SkillUplift. I’d like to book a session and discuss where I should start."
+  );
 const sessions = [
   {
     id: "manual-basics",
@@ -648,53 +651,55 @@ function App() {
         </section>
 
 
-        {/* ================= CONNECT ================= */}
+      {/* ================= CONNECT ================= */}
 
-        <section className="connect" id="connect">
+<section className="connect" id="connect">
 
-          <div className="connect-copy">
+  <div className="connect-copy">
 
-            <span className="section-kicker">
-              NOT SURE WHERE TO START?
-            </span>
+    <span className="section-kicker">
+      NOT SURE WHERE TO START?
+    </span>
 
-            <h2>
-              Let's understand where you are before choosing what to learn.
-            </h2>
+    <h2>
+      Let's understand where you are before choosing what to learn.
+    </h2>
 
-            <p>
-              Tell me what you are trying to achieve. We'll identify a
-              practical starting point based on your need and scope.
-            </p>
+    <p>
+      Tell me what you are trying to achieve. We'll identify a
+      practical starting point based on your need and scope.
+    </p>
 
-          </div>
+  </div>
 
 
-          <div className="connect-action">
+  <div className="connect-action">
 
-            <a
-              href={WHATSAPP}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whatsapp-large"
-            >
+    <a
+      href={WHATSAPP}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="whatsapp-large"
+    >
 
-              <span className="wa-icon">◉</span>
+      <span className="wa-icon">◉</span>
 
-               <span>Book Your Slot</span>
-  <small>Connect with us on WhatsApp</small>
+      <span className="cta-text">
+        <strong>Book Your Slot</strong>
+        <small>Connect with us on WhatsApp</small>
+      </span>
 
-              <b>→</b>
+      <b>→</b>
 
-            </a>
+    </a>
 
-            <p>
-              Online sessions only • Scheduled based on your time
-            </p>
+    <p>
+      Online sessions only • Flexible timing
+    </p>
 
-          </div>
+  </div>
 
-        </section>
+</section>
 
       </main>
 
