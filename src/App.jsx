@@ -681,11 +681,9 @@ function App() {
 
               <span className="wa-icon">◉</span>
 
-              <span>
-                <small>Connect on WhatsApp</small>
-                <strong>8197201901</strong>
-              </span>
-
+               <span>Book Your Slot</span>
+  <small>Connect with us on WhatsApp</small>
+  </span>
               <b>→</b>
 
             </a>
